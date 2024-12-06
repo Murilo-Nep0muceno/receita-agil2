@@ -1,0 +1,96 @@
+.sistema-contect{
+    display: block;
+    height: 100vh;
+    width: 20vw;
+    position: absolute;
+    background-color: #5995ED;
+    padding-left: 2rem;
+    border-right:1px solid black ;
+
+}
+
+#logo-pac img{
+    width: 150px;
+    margin-top: 4rem;
+    
+}
+
+.sistema-pac a {
+    color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    min-width: 140px;
+    border-radius:4px ;
+    border: 1px solid white;
+    margin-right: 2rem;
+
+}
+
+.sistema-pac a img{
+    margin-right: 1rem;
+}
+
+.sistema-pac h3 {
+    margin-top: 1rem;
+}
+
+.sistema-pac a:hover{
+    border: 2px solid white;
+    
+}
+
+
+.sistema-pac-sair{
+    position: absolute;
+    bottom: 20px;
+}
+
+.sistema-main{
+    position: absolute;
+    height: 90vh;
+    right: -0px;
+    width: 80vw;
+    margin-top: 2rem;
+}
+
+.sistema-main h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.sistema-main img{
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+@media(max-width: 990px){
+    .sistema-contect {
+        padding-left: 0.5rem;
+    }
+    .sistema-contect a{
+        width: 130px;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 890px){
+    .sistema-contect{
+        padding-left: 1rem;
+        width: 40vw;
+    }
+    .sistema-main{
+        width: 60vw;
+    }
+
+    .sistema-pac a{
+        width: 50px;
+    }
+    
+    #logo-pac a{
+        width: 140px !important;
+    }
+
+}

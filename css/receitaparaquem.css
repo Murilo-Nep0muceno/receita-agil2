@@ -1,0 +1,44 @@
+.receitaparaquem{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+
+.receitaparaquem img{
+    width: 450px;
+}
+
+.receitaparaquem p{
+    margin-top: 2rem;
+    width: 65ch;
+}
+
+
+#forma-cima{
+    position: absolute;
+    right: -350px;
+    top: -1px;
+}
+
+#forma-baixo{
+    position: absolute;
+    left: -350px;
+    bottom: -35px;
+}
+
+@media(max-width:715px){
+    #forma-cima,#forma-baixo{
+        display: none;
+    }
+    .receitaparaquem p{
+        width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

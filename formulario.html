@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita Ágil</title>
+    <link rel="shortcut icon" href="/imgs/divina-beleza.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="header-bg">
+        <header id="header">
+          <a id="logo" href="/index.html"><img src="imgs/logo.png" alt=""></a>
+          <nav id="nav">
+            <button id="btn-mobile">
+              <span id="hambuger"></span>
+            </button>
+           
+            <ul id="menu">
+              <li><a href="/index.html">Projeto</a></li>
+              <li><a href="#form-t">Formulario</a></li>
+              <li><a href="/duvidas.html">Duvidas</a></li>
+              <li><a href="/seo.html">Seo</a></li>
+          <li><a href="/login.html"><img src="imgs/people.png" alt=""></a></li>
+
+            </ul>
+          </nav>
+        </header>
+      </div>
+    
+    
+
+      
+<div id="form-t cadastro" class="form-bg ">
+  
+    <h1>Formulario de inscrição</h1>
+    <form  onsubmit="changePage(event)" id="form" >
+      <div> <label for="">Nome Completo </label></div>
+      <div> <p id="error_name" for="">Nome invalido </p></div>
+      
+      <div><input required id="name" type="text" onchange="isNameIsNotEmpyt()"  placeholder="nome completo"></div>
+      
+      <div> <label for="">E-mail </label></div>
+      <div> <p id="error_email"  for="">Email invalido </p></div>
+      <div><input required id="email" type="email" onchange=" isEmailIsNotEmpyt()" placeholder="email"></div>
+
+           
+      <div> <label for="">Senha </label></div>
+      <div> <p id="error_senha"  for="">As senhas não são iguais</p></div>
+      <div><input required id="senha" type="number" onchange=" passwordValid()" placeholder="senha"></div>
+      
+      <div> <label for="">Digite sua senha  </label></div>
+      <div><input required id="senha2" type="number" onchange="passwordValid()" placeholder="repita sua senha"></div>
+      
+      
+      <div> <label for="">Telefone </label></div>
+      <div> <p id="error_tel" for="">Telefone invalido </p></div>
+      <div><input required id="tel" type="number" onchange="telIsNotEmpyt()" maxlength="11" placeholder="telefone"></div>
+      
+      <div> <label for="">Data Nascimento</label></div>
+      <div> <p id="error_date" for="">Data invalida </p></div>
+      <div><input required id="date" type="date" onchange="dateIsNotEmpyt()"  placeholder=""></div>
+      
+      <div id="form-gender">
+        <h3 id="error_gender">Selecione um Gênero</h3>
+        <h3 id="title_gender">Gênero</h3>
+        <div><input required type="radio" onchange="genderIsValid()" name="radio" value="Masculino">Masculino</div>
+        <div> <input required type="radio" onchange="genderIsValid()"  name="radio" value="Feminino">Feminino</div>
+        <div><input required type="radio"  onchange="genderIsValid()" name="radio" value="Indefinido">Indefinido</div>
+      </div>
+      
+      <h3 id="error_select">Selecione uma opção</h3>
+      <select required  name="sel_form" onchange="selectIsValid()" id="sel_form">
+       <option value="" disabled  selected >Selecione uma Opção</option>
+       <option value="opcao1" >Paciente</option>
+       <option value="opcao2">Médico</option>
+       <option value="opcao3">Farmacêutico</option>
+      </select>
+      
+  
+      
+      <div id="form_buttons">
+        
+        <button onclick="clearFields()" id="clear">Limpar</button>
+        <button type="submit" onclick="
+   fieldsAreValid()"  id="registerBtn">Cadastrar</button>
+   </div>
+   <p onclick="changeForm()" > <a id="changeForm" href="login.html">Já esta cadastrado ?</a></p>
+  </form>
+  </div>
+        
+
+  <footer id="footer" class="footer container">
+
+    <div class="footer-links">
+      <h2>Links Complementares</h2>
+      <div class="link">
+        <a href=""><p>Termos de Uso</p></a>
+        <a href=""><p>Política de Privacidade </p></a>
+      </div>
+    </div>
+    
+    <div class="footer-social">
+      <h2>Contatos</h2>
+      <div class="footer-text">
+        <p>Email: receitaagil@gmail.com</p>
+        <p>Telefone: 11-9999-9999</p>
+      </div>
+    </div>
+    
+    <div class="footer-social">
+    <h2>Redes Sociais</h2>
+    <div class="footer-social-imgs">
+      <a href=""><img src="imgs/facebook.png" alt=""></a>
+      <a href="">
+        <img src="imgs/whatsapp.png" alt=""></a>
+        <a href=""><img src="imgs/instagram.png" alt=""></a>
+      </div>
+    </div>
+    
+  </footer>
+  <span>Receita Ágil. Todos direitos reservados 2024 &COPY;</span>
+  
+    
+</body>
+<script src="/js/main.js"></script>
+<script src="/js/form.js"></script>
+
+</html>

@@ -1,0 +1,46 @@
+.main-bg{
+    background-color: #5995ED;
+    padding-bottom: 3rem;
+}
+
+.main{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 3rem;
+}
+
+
+.main-text{
+    align-self: center;
+    margin-right: 2rem;
+}
+
+
+.main-text h1{
+    font-family: "Poppins";
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.main-text span{
+    color: white;
+}
+
+
+.main-text p{
+    font-family: "Poppins";
+    margin-top: 2rem;
+}
+
+
+@media(max-width :750px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-text{
+        margin: 0px;
+    }
+}

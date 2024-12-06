@@ -1,0 +1,91 @@
+.seo-bg{
+    background-color: #5995ED;
+
+}
+.seo-agradecimento{
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    padding-top: 2rem;
+    color: black;
+}
+
+.ig-se img{
+    margin: 0 auto;
+}
+
+.seo-agradecimento h1,h2,h3{
+    color: white;
+}
+
+.seo-mat{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#ma{
+    color: white !important;
+}
+
+.seo-card{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.seo-cards{
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+
+}
+
+.seo-cards p{
+    font-size: 0.85rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.seo-cards span{
+    font-size: 0.85rem;
+
+}
+
+#a{
+     margin-top: 2rem;
+     color: white  !important;
+}
+.seo-integrante{
+    margin-top: 2rem;
+    display:  grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.seo-pessoa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.seo-pessoa img{
+    border-radius:440px;
+}
+
+@media(max-width: 700px ){
+    .seo-card{
+        grid-template-columns: 1fr 1fr;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media(max-width: 540px){
+    .seo-card{
+        grid-template-columns: 1fr;
+    }
+    .seo-integrante{
+        grid-template-columns: 1fr;
+    }
+}

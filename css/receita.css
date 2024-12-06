@@ -1,0 +1,29 @@
+.receita-main{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+#receita{
+    margin: 0 auto;
+    width: 450px;
+    height: 550px;
+    margin-top: 2rem;
+}
+
+
+@media(max-width: 755px ){
+    #receita{
+        width: 350px;
+    }
+    .receita-main h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 560px){
+    #receita{
+        width: 250px;
+    }
+}

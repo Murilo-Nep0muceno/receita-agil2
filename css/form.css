@@ -1,0 +1,115 @@
+
+.form-bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 115vh;
+}
+
+.login{
+    height: 80vh !important;
+}
+
+.form-bg h1{
+    margin-bottom: 3rem;
+    font-family: "Poppins";
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 4px;
+    width: max-content;
+    font-family: "Poppins";
+
+}
+
+#changeForm{
+    font-size:0.85rem;
+    font-family: "Poppins";
+    cursor: pointer;
+    color: black;
+
+}
+
+#changeForm:hover{
+    color: rgb(6, 71, 167);
+}
+
+#form-gender input{
+    width: 20px;
+    margin: 0;
+    font-family: "Poppins";
+
+    
+}
+
+
+#form-gender h3{
+    margin-top: 5px;
+    text-align: center;
+}
+
+input,#sel_form {
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0px;
+    width: 350px;
+}
+
+#form_menssage{
+    width: 100%;
+    height: 150px;
+    vertical-align: super;
+    padding: 10px;
+}
+
+
+#form_buttons{
+    display: flex;
+}
+
+#clear,#registerBtn{
+    padding:10px 15px;
+    width: 100% ;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+#registerBtn{
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #102542;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#registerBtn:hover{
+    background-color: #081220;
+
+}
+
+#clear{
+    border: none;
+    background-color: #ffc53a;
+    cursor: pointer;
+}
+
+#clear:hover{
+    background-color: #f1b425;
+
+}
+
+
+#error_name,#error_email,#error_tel,#error_date,#error_gender,#error_select,#error_menssage,#error_senha,#usuInv,#usuNot{
+    text-align: center;
+    background-color: red;
+    padding: 5px;
+    display: none;
+}
+

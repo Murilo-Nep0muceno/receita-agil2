@@ -1,0 +1,51 @@
+.aviso-main {
+
+}
+
+.aviso-container{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.aviso-card{
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: max-content;
+    padding: 2rem;
+    border-radius: 4px;
+
+}
+
+.aviso-card h2{
+    margin-bottom: 10px;
+}
+
+@media(max-width: 950px){
+    .aviso-container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .aviso-main h1{
+        font-size: 2rem;
+
+    }
+
+}
+
+
+@media(max-width: 630px){
+    .aviso-container{
+
+    }
+    .aviso-card{
+        padding: 1rem;
+    }
+    .aviso-card h2{
+        font-size: 1rem;
+    }
+    .aviso-card p{
+        font-size: 0.75rem;
+    }
+}
